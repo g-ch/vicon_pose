@@ -1,0 +1,26 @@
+## Tonser 2020.5.12
+
+
+#vicon setting
+host: "192.168.2.100:801"
+model: "rollingHead"
+segment: "head"
+pose_topic_name: "/vision_pose/pose"
+#pose_topic_name: "/mavros/odometry/odom"
+vel_topic_name: "/mocap/vel"
+print_origin_data: 0
+print_convert_data: 1
+print_origin_angle: 1
+print_q_angle: 1
+print_rpy_angle: 1
+
+#坐标系转换  转换为ENU    vicon 标定的时候
+#              +x                 +y
+#              ^                  ^
+#              |                  |
+#              |                  |
+#  +Y <------vicon   ---->      ENU---------------->+X
+# 1代表vicon中的x,2。。。y,3。。。z // x213 x-213 x2-13 x123 x-123
+x_convert: 1
+y_convert: -2
+z_convert: -3

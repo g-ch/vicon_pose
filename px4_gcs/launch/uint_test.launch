@@ -1,0 +1,5 @@
+<launch>
+	<node name="drone_0" pkg="px4_gcs" type="drone_unit" output="screen">
+		<rosparam command="load" file="$(find px4_gcs)/cfg/drone_0.yaml" />
+	</node>
+</launch>

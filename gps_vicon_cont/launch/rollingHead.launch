@@ -1,0 +1,8 @@
+<launch>
+	<node name="viconros_01" pkg="gps_vicon_control" type="viconros" >
+		<rosparam command="load" file="$(find gps_vicon_control)/cfg/vicon_params.yaml" />
+	</node>
+	<node name="rollingHead" pkg="px4_gcs" type="drone_unit" output="screen">
+		<rosparam command="load" file="$(find px4_gcs)/cfg/drone_0.yaml" />
+	</node>
+</launch>

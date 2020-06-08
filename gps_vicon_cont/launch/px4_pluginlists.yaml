@@ -1,0 +1,37 @@
+plugin_blacklist:
+# common
+- safety_area
+# >>>>>>>>>added by sdx<<<<<<<<<<<
+- 3dr_radio
+- actuator_control
+- altitude
+- dummy
+- ftp
+- imu
+- param
+- rc_io
+- adsb
+- cam_imu_sync
+- fake_gps
+- gps_rtk
+- hil
+# >>>>>>>>>end added by sdx<<<<<<<<<<<
+# extras
+- image_pub
+
+- vibration
+
+- distance_sensor
+
+- rangefinder
+
+
+plugin_whitelist:
+
+- sys_*
+- global_position
+- mocap_pose_estimate
+- setpoint_*
+- command
+- vision_pose_estimate
+- trajectory
